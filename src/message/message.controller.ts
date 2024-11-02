@@ -5,7 +5,7 @@ import { MessageService } from './message.service';
 export class MessageController {
   constructor(private readonly messageService: MessageService) {}
 
-  @Get('all')
+  @Get('process')
   async getProcessedMessages() {
     const messages = await this.messageService.processMessages();
     return messages;
