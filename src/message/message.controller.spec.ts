@@ -25,6 +25,7 @@ describe('MessageController', () => {
 
   describe('getProcessedMessages', () => {
     it('should return an array of processed messages', async () => {
+      //Objeto mock para test.
       const result = [
         {
           worker: 1,
